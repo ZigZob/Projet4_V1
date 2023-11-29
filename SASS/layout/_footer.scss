@@ -1,0 +1,38 @@
+@use '../base' as *;
+@use '../utils' as *;
+
+.footer {
+    @include flexColumn;
+    background-color: $color-dark-grey;
+    padding: 22px 25px 22px 25px;
+    gap: 7px;
+
+    &__title {
+        font-family: 'Shrikhand',
+            serif;
+        font-weight: 400;
+        font-size: $fs-18;
+        color: white;
+        margin-bottom: 9px;
+
+        @media (min-width: 1024px) {
+            order: 10;
+        }
+    }
+
+    &__link {
+        color: white;
+
+        .fa-solid {
+            color: white;
+            width: 20px;
+        }
+    }
+
+    @media (min-width: 1024px) {
+
+        flex-direction: row;
+        justify-content: end;
+
+    }
+}

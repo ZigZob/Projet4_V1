@@ -1,0 +1,7 @@
+@use '../base' as *;
+@use '../utils' as *;
+
+body {
+    @include flexColumn;
+    justify-content: center;
+}

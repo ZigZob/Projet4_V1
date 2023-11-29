@@ -1,0 +1,13 @@
+@use '../base' as *;
+@use '../utils' as *;
+
+.index-main {
+    background-color: $color-notQuiteWhite;
+}
+
+.restaurant-main {
+    @include flexColumn;
+    align-items: center;
+    border-radius: 0;
+    z-index: 1;
+}

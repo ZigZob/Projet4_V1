@@ -1,0 +1,33 @@
+@use '../base' as *;
+@use '../utils' as *;
+
+.order-card {
+    @include flexRow;
+    padding: 15px;
+    background-color: white;
+    border-radius: 15px;
+    justify-content: space-between;
+
+
+    &__content {
+        @include flexColumn;
+        gap: 5px;
+    }
+
+    &__title {
+        font-size: 18px;
+    }
+
+    &__subtitle {
+        font-weight: 300;
+        font-size: 15px;
+    }
+
+    &__price {
+        display: flex;
+        align-items: end;
+        font-weight: 700;
+        font-size: 15px;
+        color: $color-dark-grey;
+    }
+}
