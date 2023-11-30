@@ -17,11 +17,16 @@
 
         @media (min-width: 1024px) {
             order: 10;
+            margin-left: 50px;
         }
     }
 
     &__link {
         color: white;
+
+        &--fw-400 {
+            font-weight: 400;
+        }
 
         .fa-solid {
             color: white;
