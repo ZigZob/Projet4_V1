@@ -3,10 +3,15 @@
 
 .restaurant-card {
     height: 251px;
+    width: 90%;
     max-width: 490px;
     background-color: white;
     position: relative;
     border-radius: 15px;
+
+    @media (min-width: 1024px) {
+        max-width: 45%;
+    }
 
     &__img {
         width: 100%;

@@ -7,10 +7,5 @@
     text-decoration: none;
     color: black;
     @include roboto-500-16;
-}
-
-.home {
-    &__h2 {
-        @include roboto-700-24;
-    }
+    box-sizing: border-box;
 }

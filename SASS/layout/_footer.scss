@@ -23,6 +23,8 @@
 
     &__link {
         color: white;
+        display: flex;
+        gap: 5px;
 
         &--fw-400 {
             font-weight: 400;
@@ -38,6 +40,6 @@
 
         flex-direction: row;
         justify-content: end;
-
+        gap: 15px;
     }
 }

@@ -1,13 +1,17 @@
 @use '../base' as *;
 @use '../utils' as *;
 
-.index-main {
-    background-color: $color-notQuiteWhite;
-}
 
-.restaurant-main {
+.main {
     @include flexColumn;
     align-items: center;
-    border-radius: 0;
-    z-index: 1;
+
+    &__index {
+        background-color: $color-notQuiteWhite;
+    }
+
+    &__restaurant {
+        border-radius: 0;
+        z-index: 1;
+    }
 }
