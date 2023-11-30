@@ -37,6 +37,10 @@
 .function {
     padding: 40px 5% 50px 5%;
 
+    @media (min-width: 1064px) {
+        padding: 40px 0 50px 0;
+    }
+
     &__container {
         width: 100%;
         background-color: white;
