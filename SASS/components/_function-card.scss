@@ -1,7 +1,7 @@
 @use '../base' as *;
 @use '../utils' as *;
 
-.function__card {
+.function-card {
     @include flexRow;
     align-items: center;
     gap: 24px;

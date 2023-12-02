@@ -1,26 +1,5 @@
 @use "../base/index" as *;
 
-@mixin roboto-500-16 {
-    font-weight: $fw-500;
-    font-size: $fs-16;
-    font-family: 'Roboto',
-        sans-serif;
-}
-
-@mixin roboto-700-24 {
-    font-weight: $fw-700;
-    font-size: $fs-24;
-    font-family: 'Roboto',
-        sans-serif;
-}
-
-@mixin roboto-300-18 {
-    font-weight: $fw-300;
-    font-size: $fs-18;
-    font-family: 'Roboto',
-        sans-serif;
-}
-
 @mixin flexRow {
     display: flex;
     flex-direction: row;

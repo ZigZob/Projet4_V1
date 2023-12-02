@@ -20,7 +20,7 @@
         z-index: 2;
     }
 
-    &__index__location {
+    &__location {
         @include flexRow;
         justify-content: center;
         align-items: center;
@@ -34,7 +34,7 @@
         }
     }
 
-    &__restaurant__link {
+    &__link {
         position: absolute;
         left: 24px;
         top: 23px;

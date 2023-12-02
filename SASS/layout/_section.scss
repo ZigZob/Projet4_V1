@@ -20,12 +20,14 @@
     text-align: center;
 
     &__title {
-        @include roboto-700-24;
+        font-size: 24px;
+        font-weight: 700;
         padding: 0px 50px 20px 50px;
     }
 
     &__subtitle {
-        @include roboto-300-18;
+        font-size: 18px;
+        font-weight: 300;
         color: $color-dark-grey;
     }
 
