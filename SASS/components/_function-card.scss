@@ -5,7 +5,7 @@
     @include flexRow;
     align-items: center;
     gap: 24px;
-    background-color: $color-notQuiteWhite;
+    background-color: $color-main-bg;
     padding: 24px 24px 24px 0;
     width: 100%;
     max-width: 335px;
@@ -14,7 +14,7 @@
     counter-increment: list-number;
 
     &__icon {
-        color: $color-grey;
+        color: $color-icon-light;
 
         &--cta {
             color: $color-primary;

@@ -28,7 +28,7 @@
     &__subtitle {
         font-size: 18px;
         font-weight: 300;
-        color: $color-dark-grey;
+        color: $color-icon-dark;
     }
 
     &__cta-btn {
@@ -86,7 +86,7 @@
 .plate-selection {
     @include flexColumn;
     align-items: center;
-    background-color: $color-notQuiteWhite;
+    background-color: $color-main-bg;
     width: 100%;
     max-width: 1055px;
     gap: 40px;
