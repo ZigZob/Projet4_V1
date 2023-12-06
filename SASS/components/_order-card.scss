@@ -3,15 +3,25 @@
 
 .order-card {
     @include flexRow;
-    padding: 15px;
     background-color: white;
     border-radius: 15px;
-    justify-content: space-between;
-
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
 
     &__content {
         @include flexColumn;
+        padding: 15px;
         gap: 5px;
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    &__content>* {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
     }
 
     &__title {
@@ -23,11 +33,47 @@
         font-size: 15px;
     }
 
+    &__slider {
+        @include flexRow;
+        transform: translate(60px);
+        transition: transform 250ms ease-in-out;
+    }
+
     &__price {
         display: flex;
+        justify-content: center;
         align-items: end;
+        padding: 15px 19px 15px 15px;
         font-weight: 700;
         font-size: 15px;
         color: $color-icon-dark;
+    }
+
+    &__checkmark {
+        color: $color-tertiary;
+        background-color: white;
+        border-radius: 50%;
+        padding: 3px;
+    }
+
+    &--checked {
+        background-color: $color-tertiary;
+        border-radius: 0 15px 15px 0;
+        width: 60px;
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: transform 250ms ease-in-out;
+    }
+
+    &__checkbox {
+        width: 0;
+
+        &:checked {
+            &~.order-card__slider {
+                transform: translate(0);
+            }
+        }
     }
 }
