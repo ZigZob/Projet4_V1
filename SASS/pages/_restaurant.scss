@@ -52,3 +52,23 @@
         }
     }
 }
+
+.entrees,
+.plats,
+.desserts {
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: plate-reveal 500ms ease-in-out forwards;
+}
+
+.entrees {
+    animation-delay: 1s;
+}
+
+.plats {
+    animation-delay: 2s;
+}
+
+.desserts {
+    animation-delay: 3s;
+}

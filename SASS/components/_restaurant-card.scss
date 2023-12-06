@@ -32,8 +32,6 @@
         padding: 13px;
     }
 
-    //&__txt {}
-
     &__title {
         font-weight: 700;
         font-size: 18px;
@@ -42,12 +40,6 @@
     &__location {
         font-weight: 300;
         font-size: 17px;
-    }
-
-    &__like {
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
 
     &--new::before {
