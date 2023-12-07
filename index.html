@@ -17,12 +17,14 @@
 
 <body>
     <div class="loader"></div>
-    <header class="header">
-        <span class="header__logo">ohmyfood</span>
-        <div class="header__location">
-            <i class="fa-solid fa-location-dot"></i>
-            <p>Paris, Belleville</p>
-        </div>
+    <header>
+        <nav class="nav">
+            <span class="nav__logo">ohmyfood</span>
+            <form method="get" action="#" class="nav__location">
+                <label for="location"><i class="fa-solid fa-location-dot"></i></label>
+                <input class="nav__input" type="text" name="location" id="location" placeholder="Paris, Belleville">
+            </form>
+        </nav>
     </header>
     <main class="main main__index">
         <section class="introduction index-section index-section__introduction">

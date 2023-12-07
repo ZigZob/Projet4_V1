@@ -29,14 +29,29 @@
     justify-content: center;
     background-color: $color-main-bg;
     animation: loader-fade 3s forwards;
+    mix-blend-mode: overlay;
 
     &::after {
         content: '';
+        position: relative;
         width: 75px;
         height: 75px;
-        border: 15px solid $color-primary;
         border-top: 15px solid $color-secondary;
+        border-bottom: 15px solid $color-secondary;
+        border-radius: 50%;
+        animation: loader-spin 0.75s ease-in-out infinite;
+        mix-blend-mode: overlay;
+    }
+
+    &::before {
+        position: absolute;
+        content: '';
+        width: 75px;
+        height: 75px;
+        border-right: 15px solid $color-primary;
+        border-left: 15px solid $color-primary;
         border-radius: 50%;
         animation: loader-spin 0.75s ease-in-out infinite;
     }
+
 }
