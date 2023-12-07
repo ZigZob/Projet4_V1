@@ -68,7 +68,7 @@
     }
 
     &__checkbox {
-        width: 0;
+        opacity: 0;
 
         &:checked {
             &~.order-card__slider {

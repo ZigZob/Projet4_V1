@@ -11,9 +11,12 @@
 }
 
 @keyframes loader-fade {
+    99% {
+        transform: scale(1);
+    }
 
     100% {
-        scale: (0);
+        transform: scale(0);
     }
 }
 
