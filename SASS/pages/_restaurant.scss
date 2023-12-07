@@ -32,11 +32,16 @@
 }
 
 .plate {
+    all: unset;
     @include flexColumn;
     gap: 12px;
-    width: 90%;
+    width: 100%;
     max-width: 634px;
     border: none;
+
+    &>* {
+        margin: 0 13px 0 13px;
+    }
 
     &__title {
         font-weight: 300;

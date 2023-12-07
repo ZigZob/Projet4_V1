@@ -23,6 +23,10 @@
     &__input {
         border: none;
         background-color: inherit;
+
+        &::placeholder {
+            color: $color-icon-dark;
+        }
     }
 
     &__location {
@@ -36,9 +40,10 @@
         height: 50px;
         padding-left: 65px;
 
-        &>* {
+        .fa-location-dot {
             color: $color-icon-dark;
         }
+
     }
 
     &__link {
