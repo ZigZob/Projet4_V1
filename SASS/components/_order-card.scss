@@ -2,20 +2,21 @@
 @use '../utils' as *;
 
 .order-card {
+    position: relative;
     @include flexRow;
     background-color: white;
     border-radius: 15px;
-    overflow: hidden;
-    position: relative;
     cursor: pointer;
+    overflow: hidden;
+    justify-content: space-between;
 
     &__content {
         @include flexColumn;
-        padding: 15px;
+        padding: 15px 0 15px 15px;
         gap: 5px;
-        position: relative;
-        width: 100%;
         overflow: hidden;
+        max-width: calc(100% - 50px);
+        transition: max-width 250ms ease-in-out;
     }
 
     &__title {
@@ -27,20 +28,32 @@
         font-size: 15px;
     }
 
-    &__slider {
-        @include flexRow;
-        transform: translate(60px);
-        transition: transform 250ms ease-in-out;
-    }
-
     &__price {
         display: flex;
         justify-content: center;
         align-items: end;
-        padding: 15px 19px 15px 15px;
+        padding: 0 15px 15px 0;
         font-weight: 700;
         font-size: 15px;
         color: $color-icon-dark;
+        transition: transform 250ms ease-in-out;
+    }
+
+    &__checkbox {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: inherit;
+        background-color: $color-tertiary;
+        border-radius: 0 15px 15px 0;
+        width: 60px;
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translate(60px);
+        transition: transform 250ms ease-in-out;
     }
 
     &__checkmark {
@@ -50,25 +63,25 @@
         padding: 3px;
     }
 
-    &__checkbox {
-        background-color: $color-tertiary;
-        border-radius: 0 15px 15px 0;
-        width: 60px;
-        padding: 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
     &:hover {
-        & .order-card__slider {
-            transform: translate(0);
-        }
+        & .order-card {
+            &__content {
+                max-width: calc(100% - 110px);
+            }
 
-        & .order-card__content>* {
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            overflow: hidden;
+            &__content>* {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+
+            &__price {
+                transform: translate(-60px);
+            }
+
+            &__checkbox {
+                transform: translate(0);
+            }
         }
     }
 }

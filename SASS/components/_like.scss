@@ -7,17 +7,14 @@
     align-items: center;
     position: relative;
     cursor: pointer;
-    z-index: 2;
 
     &--off {
         position: relative;
-        z-index: 2;
         opacity: 1;
         transition: opacity 250ms ease-in-out;
     }
 
     &--on {
-        z-index: 2;
         position: absolute;
         transform: scale(0);
         transition: transform 250ms ease-in-out;
