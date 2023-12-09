@@ -15,8 +15,13 @@
         padding: 15px 0 15px 15px;
         gap: 5px;
         overflow: hidden;
-        max-width: calc(100% - 50px);
+        max-width: calc(100% - 41px);
         transition: max-width 250ms ease-in-out;
+
+        &>* {
+            white-space: nowrap;
+            overflow: hidden;
+        }
     }
 
     &__title {
@@ -66,17 +71,15 @@
     &:hover {
         & .order-card {
             &__content {
-                max-width: calc(100% - 110px);
-            }
-
-            &__content>* {
-                overflow: hidden;
-                text-overflow: ellipsis;
-                white-space: nowrap;
+                max-width: calc(100% - 101px);
             }
 
             &__price {
                 transform: translate(-60px);
+            }
+
+            &__content>* {
+                text-overflow: ellipsis;
             }
 
             &__checkbox {

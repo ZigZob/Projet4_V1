@@ -23,21 +23,21 @@
             serif;
         font-size: 28px;
         color: $color-main-font;
+        margin-left: 13px;
     }
 
     &__icon {
         display: flex;
         align-items: center;
+        margin-right: 13px;
     }
 }
 
 .plate {
-    all: unset;
     @include flexColumn;
     gap: 12px;
     width: 100%;
     max-width: 634px;
-    border: none;
 
     &>* {
         margin: 0 13px 0 13px;
@@ -47,7 +47,6 @@
         font-weight: 300;
         position: relative;
         padding-bottom: 10px;
-        margin-bottom: 10px;
 
         &::after {
             content: '';
