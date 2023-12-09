@@ -18,12 +18,6 @@
         overflow: hidden;
     }
 
-    &__content>* {
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
-    }
-
     &__title {
         font-size: 18px;
     }
@@ -56,7 +50,7 @@
         padding: 3px;
     }
 
-    &--checked {
+    &__checkbox {
         background-color: $color-tertiary;
         border-radius: 0 15px 15px 0;
         width: 60px;
@@ -64,16 +58,17 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        transition: transform 250ms ease-in-out;
     }
 
-    &__checkbox {
-        opacity: 0;
+    &:hover {
+        & .order-card__slider {
+            transform: translate(0);
+        }
 
-        &:checked {
-            &~.order-card__slider {
-                transform: translate(0);
-            }
+        & .order-card__content>* {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
         }
     }
 }
