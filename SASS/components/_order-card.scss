@@ -21,6 +21,8 @@
         transition: max-width 200ms ease-in-out 100ms;
 
         &>* {
+            overflow: hidden;
+            text-overflow: ellipsis;
             animation: slide-out 350ms forwards;
         }
     }
@@ -80,8 +82,6 @@
             }
 
             &__content>* {
-                overflow: hidden;
-                text-overflow: ellipsis;
                 animation: slide-in 300ms forwards;
             }
 
