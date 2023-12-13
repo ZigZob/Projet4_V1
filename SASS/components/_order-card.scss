@@ -12,16 +12,16 @@
     box-shadow: 0px 4px 15px 0px #0000001A;
 
     &__content {
+
         @include flexColumn;
         padding: 15px 0 15px 15px;
         gap: 5px;
         overflow: hidden;
         max-width: calc(100% - 41px);
-        transition: max-width 250ms ease-in-out;
+        transition: max-width 200ms ease-in-out 100ms;
 
         &>* {
-            white-space: nowrap;
-            overflow: hidden;
+            animation: slide-out 350ms forwards;
         }
     }
 
@@ -42,7 +42,7 @@
         font-weight: 700;
         font-size: 15px;
         color: $color-icon-dark;
-        transition: transform 250ms ease-in-out;
+        transition: transform 200ms ease-in-out 100ms;
     }
 
     &__checkbox {
@@ -59,7 +59,7 @@
         justify-content: center;
         align-items: center;
         transform: translate(60px);
-        transition: transform 250ms ease-in-out;
+        transition: transform 200ms ease-in-out 100ms;
     }
 
     &__checkmark {
@@ -80,7 +80,9 @@
             }
 
             &__content>* {
+                overflow: hidden;
                 text-overflow: ellipsis;
+                animation: slide-in 300ms forwards;
             }
 
             &__checkbox {

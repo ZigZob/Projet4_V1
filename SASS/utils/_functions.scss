@@ -26,3 +26,23 @@
         transform: translateX(0);
     }
 }
+
+@keyframes slide-in {
+    100% {
+        white-space: nowrap;
+    }
+}
+
+@keyframes slide-out {
+    0% {
+        white-space: nowrap;
+    }
+
+    81% {
+        white-space: nowrap;
+    }
+
+    100% {
+        white-space: normal;
+    }
+}
